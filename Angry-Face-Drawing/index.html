@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angry Face</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: lightcoral;
+        }
+        .face {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            margin: 50px auto;
+            border: 3px solid black;
+        }
+        .eye {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+        }
+        .eye.left { left: 50px; }
+        .eye.right { right: 50px; }
+
+        .eyebrow {
+            width: 50px;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            top: 40px;
+        }
+        .eyebrow.left {
+            left: 40px;
+            transform: rotate(-20deg);
+        }
+        .eyebrow.right {
+            right: 40px;
+            transform: rotate(20deg);
+        }
+
+        .mouth {
+            width: 100px;
+            height: 50px;
+            border: 4px solid black;
+            border-bottom: none;
+            border-radius: 50px 50px 0 0;
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>😠 Build an Angry Face!</h1>
+    <p>Use CSS to style the face.</p>
+    <div class="face">
+        <div class="eyebrow left"></div>
+        <div class="eyebrow right"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
