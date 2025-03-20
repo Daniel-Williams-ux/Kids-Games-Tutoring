@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Face</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        .face {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            margin: 50px auto;
+            border: 3px solid black;
+        }
+        .eye {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+        }
+        .eye.left { left: 50px; }
+        .eye.right { right: 50px; }
+        .mouth {
+            width: 100px;
+            height: 50px;
+            border: 4px solid black;
+            border-top: none;
+            border-radius: 0 0 50px 50px;
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>😀 Build a Happy Face!</h1>
+    <p>Use CSS to style the shapes.</p>
+    <div class="face">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
